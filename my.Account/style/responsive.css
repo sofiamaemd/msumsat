@@ -1,0 +1,323 @@
+/* these medias adjust width at lowest pixel */
+/* lowpxl */
+@media all and (min-width: 160px) and (max-width: 300px) {
+  .inFtrContainer-I {
+      max-width: 100%;
+  }
+  .ftr-header-in {
+      max-width: 100%;
+  }
+  .inFtrContainer-II {
+      max-width: 100%;
+  }
+  .inFtrContainer-III {
+      max-width: 100%;
+  }
+  .map-inner-wrapper {
+      max-width: 100%;
+  }
+  .wrapper {
+      max-width: 100%;
+  }
+  .header-inner-wrapper {
+      max-width: 100%;
+  }
+  header {
+      max-width: 100%;
+  }
+  .dash-con {
+      max-width: 100%;
+  }
+  .headerlogo-inner-wrapper {
+      max-width: 100%;
+  }
+  .nav-inner-wrapper {
+      max-width: 100%;
+  }
+  .header-logo-inner-wrapper {
+      max-width: 100%;
+  }
+  .header-top-inner-wrapper {
+      max-width: 100%;
+  }
+  .body-inner-wrapper {
+      max-width: 100%;
+  }
+  .body-outer-wrapper {
+      max-width: 100%;
+  }
+  .container {
+      max-width: 100%;
+  }
+}
+
+/* midpxl add something like this to other medias*/
+@media all and (min-width: 80px) and (max-width: 1180px) {
+  .inFtrContainer-I {
+      max-width: 100%;
+  }
+  .ftr-header-in {
+      max-width: 100%;
+  }
+  .inFtrContainer-II {
+      max-width: 100%;
+  }
+  .inFtrContainer-III {
+      max-width: 100%;
+  }
+  .map-inner-wrapper {
+      max-width: 100%;
+  }
+  .wrapper {
+      max-width: 100%;
+  }
+  .header-inner-wrapper {
+      max-width: 100%;
+  }
+  header {
+      max-width: 100%;
+  }
+  .dash-con {
+      max-width: 100%;
+  }
+  .headerlogo-inner-wrapper {
+      max-width: 100%;
+      max-height: 100%;
+  }
+  .nav-inner-wrapper {
+      max-width: 100%;
+  }
+  .header-logo-inner-wrapper {
+      max-width: 100%;
+  }
+  .header-top-inner-wrapper {
+      max-width: 100%;
+  }
+  .body-inner-wrapper {
+      max-width: 100%;
+  }
+  .body-outer-wrapper {
+      max-width: 100%;
+  }
+  .container {
+      max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sidenav-container {
+      display: block;
+      transition: transform 0.3s ease;
+      transform: translateX(-100%);
+  }
+  .sidenav-container.show-sidebar {
+      display: block;
+      transform: translateX(0%);
+  }
+  .sidenav-container {
+      top: 0;
+      left: 0;
+      height: auto;
+      padding: 1.5rem 1.5rem 2rem;
+      width: 5.6rem;
+      color: #fff;
+      transition: width 0.2s ease;
+  }
+  .nav {
+      font-family: "Poppins", sans-serif;
+      overflow: hidden;
+  }
+  .nav__brand {
+      display: grid;
+      place-items: center;
+      grid-template-columns: max-content max-content 1fr;
+      column-gap: 1rem;
+      column-gap: 0.4rem;
+      padding: 0.75rem 0;
+      font-weight: 600;
+  }
+  .nav__brand .nav__icon--menu {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: 0.1s ease;
+  }
+  .nav__brand .nav__icon--menu:hover {
+      background: #18213a;
+  }
+  .nav__brand .nav__icon--menu:active {
+      background: #1e2949;
+  }
+  .nav__brand-logo {
+      cursor: pointer;
+  }
+  .nav__item {
+      border-radius: 0.5rem;
+      transition: 0.05s ease;
+  }
+  .nav__item:hover {
+      background-color: #0c5df4;
+  }
+  .nav__item .nav__drop {
+      height: 0px;
+      overflow: hidden;
+      font-size: 0.875rem;
+      transition: height 0.2s ease;
+  }
+  .nav__item .nav__drop a {
+      color: #b6cefc;
+      transition: 0.05s ease;
+  }
+  .nav__item .nav__drop a:hover {
+      color: #fff;
+  }
+  .nav__item .nav__drop .padding {
+      padding: 0 0 0.75rem 3rem;
+  }
+  .nav__link {
+      display: grid;
+      place-items: center;
+      grid-template-columns: max-content max-content 1fr;
+      column-gap: 1rem;
+      padding: 0.75rem;
+      color: #fff;
+  }
+  .nav__name {
+      font-size: var(--small-font-size);
+  }
+  .nav__icon {
+      font-size: 1.2rem;
+  }
+  .nav__user {
+      display: grid;
+      place-items: center;
+      grid-template-columns: max-content max-content 1fr;
+      column-gap: 1rem;
+      column-gap: 0.6rem;
+      margin-top: 0.75rem;
+      padding: 0.75rem 1px;
+      padding: 0.2rem 0;
+      border-radius: 2rem;
+      cursor: pointer;
+  }
+  .nav__user:hover {
+      background: #18213a;
+  }
+  .nav__user-image {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 100%;
+      overflow: hidden;
+  }
+  .nav__user-image img {
+      transform: scale(1.5) translate(-1px, 4px);
+  }
+  .nav__user-info {
+      line-height: 1.2rem;
+  }
+  .nav__user-info-name {
+      font-size: 1rem;
+  }
+  .nav__user-info-email {
+      font-size: 0.7rem;
+      font-weight: 300;
+      color: #b6cefc;
+  }
+  .toggle-icon {
+      justify-self: flex-end;
+  }
+}
+
+/* Media Queries
+--------------------------------------------- */
+@media all and (max-width: 3500px) and (min-width: 300px) {
+}
+@media all and (max-width: 3500px) and (min-width: 768px) {
+  .respo-toggle {
+      display: none;
+  }
+}
+
+@media all and (max-width: 1174px) and (min-width: 973px) {
+}
+
+@media all and (max-width: 973px) and (min-width: 769px) {
+}
+
+@media all and (max-width: 768px) {
+  .sidenav-container {
+      display: block;
+  }
+  .no-1-con,
+  .no-2-con,
+  .h-links,
+  .s-g-links {
+      display: block; /* Remove float */
+      clear: both;
+  }
+
+  .con-1-col-1,
+  .con-1-col-2,
+  .con-1-row,
+  .con-1-col-3 {
+      width: 100%; /* Take up full width */
+  }
+  .no-1-con {
+      width: 100%;
+  }
+  .col-1-row-1 {
+      padding: 0px;
+      margin: 10px 10px;
+      border-radius: 5px;
+      height: 300px;
+  }
+  .col-1-row-2 {
+      padding: 30px;
+      margin: 10px 10px;
+      border-radius: 5px;
+      height: 300px;
+  }
+  .col-1-row-3 {
+      padding: 0px;
+      margin: 10px 10px;
+      border-radius: 5px;
+      height: 300px;
+  }
+  .con-1-row {
+      padding: 30px;
+      margin: 10px 10px;
+      border-radius: 5px;
+      height: 300px;
+  }
+  .con-1-col-1 {
+      max-height: 150px;
+      border: 1px solid black;
+  }
+  .con-1-col-2 {
+      max-height: 150px;
+      border: 1px solid black;
+  }
+  #respo-con {
+      margin-top: -40px;
+  }
+  .no-2-con {
+      width: 100%;
+      display: inline-block;
+      float: left;
+  }
+  .con-1-col-3 {
+      display: inline-block;
+      float: left;
+  }
+}
+@media all and (max-width: 425px) and (min-width: 376px) {
+}
+@media all and (max-width: 375px) and (min-width: 320px) {
+}
+@media all and (max-width: 320px) {
+}
+@media all and (max-width: 300px) {
+}

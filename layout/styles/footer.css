@@ -1,0 +1,234 @@
+@import url("responsive.css");
+
+/*Google Map*/
+.map-inner-wrapper {
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 1150px;
+    min-height: 375px;
+    height: auto;
+    background-color: white;
+    box-sizing: border-box;
+}
+.map-outer-wrapper {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    word-wrap: break-word;
+}
+.googlemap {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*First Layer Footer Container*/
+.ftr-header-in {
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 1140px;
+    height: 40px;
+    background-color: transparent;
+    text-align: end;
+}
+.ftr-border {
+    display: block;
+    margin: 0 auto;
+    background-color: transparent;
+    word-wrap: break-word;
+}
+.inFtrContainer-I {
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 1140px;
+    height: auto;
+    background-color: transparent;
+    padding: 15px 0;
+}
+.outFtrContainer-I {
+    display: block;
+    margin: 0 auto;
+    background-color: #E3F2FD;
+    word-wrap: break-word;
+}
+#c-charter {
+    width: 70%;
+}
+
+.Social-Network {
+    justify-content: space-between;
+}
+.Social-Network a {
+    justify-content: space-between;
+    font-size: 17px;
+}
+.Social-Network a:hover {
+    color: black;
+    font-style: normal;
+    text-decoration: none;
+    transform: translateY(-6px)
+}
+.fa {
+    background-color: transparent;
+    padding: 6px;
+    width: 39px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 1px;
+    border-radius: 5px;
+}
+.fa:hover {
+    transform: translateY(-6px);
+}
+.fa-facebook {
+    background: #a70202;
+    color: white;
+}
+.fa-twitter {
+    background: #a70202;
+    color: white;
+}
+.fa-linkedin {
+    background: #970202;
+    color: white;
+}
+.fa-youtube {
+    background: #a70202;
+    color: white;
+}
+.fa-instagram {
+    background: #a70202;
+    color: white;
+}
+/*First Layer Footer Design*/
+.first-col {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first-col p {
+    color: #000008;
+    font-size: 12px;
+}
+.first-col a {
+    color: #000008;
+}
+.first-col h4 a {
+    color: #000008;
+    font-size: 17px;
+    letter-spacing: -.9px;
+}
+
+.col-design {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.col-design ul {
+    color: #a70202;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.col-design ul a {
+    color: #a70202;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.col-design p {
+    color: #000008;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+}
+.col-design h1 {
+    color: #a70202;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.col-design a {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    color: #121212;
+}
+.col-design a:hover {
+    text-decoration: underline;
+}
+#footer-logo {
+    max-width: 30%;
+    height: auto;
+    padding-bottom: 10px
+}
+/*Second Layer Footer Container*/
+.inFtrContainer-II {
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 1150px;
+    height: auto;
+    background-color: #222222;
+    padding: 10px 0px;
+}
+.outFtrContainer-II {
+    display: block;
+    margin: 0 auto;
+    background-color: #222222;
+    word-wrap: break-word;
+}
+/*Second Layer Footer Design*/
+.msu-system-footer {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.msu-system-footer ul {
+    color: #a70202;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+.msu-system-footer h1 {
+    font-size: 12px;
+    color: #7e7e7e;
+    margin-bottom: 10px;
+}
+.msu-system-footer p {
+    font-size: 12px;
+    color: white;
+}
+.msu-system-footer a {
+    font-size: 12px;
+    color: white;
+}
+.msu-system-footer a:hover {
+    font-size: 12px;
+    color: white;
+    text-decoration: underline;
+}
+#ftr-col-4-img {
+    width: 55%;
+}
+#ftr-col-4-img-2 {
+    width: 80%;
+}
+#msu-seal {
+    position: relative;
+    width: 65%;
+}
+/*Third Layer Footer Container*/
+.inFtrContainer-III {
+    display: block;
+    margin: 0 auto;
+    word-wrap: break-word;
+    width: 1150px;
+    background-color: #a70202;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 500
+}
+.outFtrContainer-III {
+    display: block;
+    margin: 0 auto;
+    background-color: #a70202;
+    word-wrap: break-word;
+    padding: 5px 0px;
+}
+
+#ftr-header {
+    text-align: center;
+    padding-bottom: 8px;
+}

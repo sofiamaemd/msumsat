@@ -1,0 +1,2289 @@
+  /* CSS Document */
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+  @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+  .datetime {
+      font-size: 11px;
+      color: #ffffff;
+  }
+  .time {
+      font-size: 11px;
+  }
+  .date {
+      font-size: 11px;
+  }
+  .top-row {
+      text-align: end;
+  }
+  .top-row a {
+      font-size: 11px;
+      color: white;
+      padding: 0 5px;
+  }
+  .top-row ul {
+      padding: 0;
+      float: right;
+      display: flex
+  }
+  .top-row li {
+      list-style-type: none;
+      padding: 0 5px;
+  }
+  .top-row a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      color: white;
+      position: relative;
+  }
+  .top-row ul li a:before {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top: 120%;
+      left: 0;
+      transition: all 0.5s;
+  }
+  .top-row ul li a:after {
+      content: "";
+      width: 0;
+      height: 2px;
+      background-color: white;
+      position: absolute;
+      top: 120%;
+      right: 0;
+      transition: all 0.5s;
+  }
+  .top-row ul li a:hover:before {
+      width: 50%;
+      transform: translateX(100%);
+  }
+  .top-row ul li a:hover:after {
+      width: 50%;
+      transform: translateX(-100%);
+  }
+  #page-header {
+      color: #941a1e;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      font-weight: 100;
+      padding: 15px 0px 0px 0px;
+  }
+  .toggle,
+  [id^=drop] {
+      display: none;
+  }
+  /* Giving a background-color to the nav container. */
+  nav {
+      margin: 0;
+      padding: 0;
+      z-index: 9999999;
+      justify-content: center;
+  }
+  /* Since we'll have the "ul li" "float:left"
+  * we need to add a clear after the container. */
+  nav:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  /* Removing padding, margin and "list-style" from the "ul",
+  * and adding "position:reltive" */
+  nav ul {
+      float: center;
+      justify-content: center;
+      padding: 0;
+      list-style: none;
+      position: relative;
+  }
+  /* Positioning the navigation items inline */
+  nav ul li {
+      margin-right: -4px;
+      display: inline-block;
+      background-color: #a51515;
+  }
+  /* Positioning the navigation items inline */
+  nav ul li a {
+      display: inline-block;
+      background-color: #131313;
+  }
+  /* Styling the links */
+  nav a {
+      text-align: center;
+      width: 144.57345px;
+      display: block;
+      padding: 8px 5px;
+      color: #FFF;
+      font-size: 13px;
+      text-decoration: none;
+      z-index: 9999999;
+  }
+  nav ul li ul li:hover {
+      background: #d3d1d1;
+      color: white
+  }
+  /* Background color change on Hover */
+  nav a:hover {
+      background: #d3d1d1;
+      color: #333
+  }
+  /* Hide Dropdowns by Default
+  * and giving it a position of absolute */
+  nav ul ul {
+      margin-left: -144.8px;
+      display: none;
+      position: absolute;
+      /* has to be the same number as the "line-height" of "nav a" */
+      top: 35px;
+  }
+  nav li ul li a {
+      font-size: 11.2px;
+      text-align: start;
+      padding-left: 15px;
+  }
+  /* Display Dropdowns on Hover */
+  nav ul li:hover>ul {
+      display: inherit;
+  }
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+      margin-right: 10px;
+      width: 100.9px;
+      background-color: red;
+      float: none;
+      display: list-item;
+      position: relative;
+      z-index: 9999999;
+  }
+  /* Change ' +' in order to change the Dropdown symbol */
+  li>a:after {
+      content: '';
+  }
+  li>a:only-child:after {
+      content: '';
+  }
+  /* Media Queries
+  --------------------------------------------- */
+  @media all and (max-width : 3500px) and (min-width :300px) {
+      .respo-btn-none {
+          display: none
+      }
+      #submenu {
+          display: none
+      }
+  }
+  @media all and (max-width : 3500px) and (min-width :769px) {
+      #page-header {
+          display: none;
+      }
+  }
+  @media all and (max-width : 1174px) and (min-width : 973px) {
+    .campus-head-col-2 {
+        width: 71.1% !important;
+        margin: 0px 5px;
+        padding: 0 10px;
+    }
+      .col-1-con {
+          width: 25%;
+      }
+      .col-2-con {
+          width: 71%;
+          margin: 0 0 0 25px;
+      }
+
+      .col-2-2-prof {
+          width: 64%
+      }
+      .col-2-3-prof {
+          width: 29%;
+      }
+      nav a {
+          text-align: center;
+          max-width: 119.39px;
+          display: block;
+          padding: 8px 2px;
+          color: #FFF;
+          font-size: 13px;
+          text-decoration: none;
+          z-index: 9999999;
+      }
+      /*a-events layer*/
+      .announcement {
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .events {
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+          margin-right: 7px;
+      }
+      .events {
+          width: 29.1%;
+      }
+      .announcement {
+          width: 70%;
+      }
+      /*a-events layer*/
+      /*newsletter*/
+      #img-size-newsletter {
+          max-height: 290px;
+      }
+      .news-letter-col-1-3 {
+          width: 30.58%;
+      }
+      .news-letter-col-1-3 {
+          display: block;
+          margin: 0 20.312px;
+      }
+      .news-letter-col-1-3-featured {
+          width: 29.46%;
+      }
+      .news-letter-col-1-3-featured {
+          display: block;
+          margin: 0 20.312px;
+      }
+      /*newsletter*/
+      #remove {
+          display: none !important;
+      }
+      .nav-inner-wrapper {
+          margin: 0 auto;
+          word-wrap: break-word;
+          max-width: 955px;
+          min-height: 25px;
+          height: auto;
+          background-color: #121212;
+      }
+      nav ul ul {
+          margin-left: -119px;
+      }
+      .header-top-inner-wrapper {
+          max-width: 947px;
+      }
+      .body-inner-wrapper {
+          max-width: 947px;
+      }
+      .campus-head-con-in {
+          max-width: 947px;
+      }
+      .inFtrContainer-I {
+          max-width: 950px;
+      }
+      .ftr-header-in {
+          max-width: 950px;
+      }
+
+      .wrapper {
+          max-width: 950px;
+      }
+      .slides img {
+          width: 100%;
+          max-width: 1150px;
+          max-height: 374px;
+          height: auto;
+          margin: 0;
+          padding: 0;
+          border: none;
+          line-height: normal;
+          vertical-align: middle;
+          box-sizing: border-box;
+      }
+      #respo-img {
+          max-width: 100%;
+          height: 50px;
+          border: 0px solid black;
+          margin-top: -10px;
+          background-color: #84794f;
+          margin-bottom: 10px;
+      }
+      /* directives */
+      .col-1-5 {
+          display: inline-block;
+          padding: 0 1px;
+          margin: 0 .5px;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .col-1-5 {
+          width: 19.49999%
+      }
+      .semi-page-header ul li {
+          color: rgb(85, 40, 40);
+          margin-left: 30px;
+      }
+      #respo-adjust {
+          margin-left: 0px;
+          margin-top: -9px
+      }
+      .half {
+          width: 100%;
+      }
+      #offices-resources {
+          width: 100%;
+          height: 200px;
+      }
+      #ftr-img {
+          height: 18px;
+          margin-top: -5px;
+      }
+
+      .footer-one_third {
+          width: 35%;
+      }
+
+      .ftr-col1-5 {
+          width: 20%;
+      }
+      .ftr-col-1 {
+          width: 100%;
+      }
+      .first-col p {
+          font-size: 11.9px;
+      }
+      .first-col h4 a {
+          color: #000008;
+          font-size: 13.5px;
+          letter-spacing: -1.5px;
+          line-height: 2px;
+          font-weight: 800;
+      }
+      /*2nd layer footer*/
+      .inFtrContainer-II {
+          max-width: 950px;
+      }
+      .footer-one_quarter {
+          width: 25%;
+      }
+      .footer-one_quarter {
+          display: inline-block;
+          margin: 0px 0px 0px 19px;
+      }
+      .col-1-35-ftr {
+          display: block;
+          float: left;
+          margin-top: -5px;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .col-1-65-ftr {
+          display: block;
+          float: left;
+          margin-top: -8px;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .msu-system-footer ul {
+          color: #a70202;
+          font-family: Arial, Helvetica, sans-serif;
+          text-transform: uppercase;
+          padding-top: 5px;
+          padding-bottom: 5px
+      }
+      .msu-system-footer h1 {
+          font-size: 13px;
+          color: #555555;
+          margin-bottom: 5px;
+      }
+      .msu-system-footer p {
+          font-size: 12px;
+          color: white;
+      }
+      .msu-system-footer a {
+          font-size: 11px;
+          color: white;
+          letter-spacing: -.53px;
+      }
+      #ftr-col-4-img {
+          width: 75%;
+      }
+      #msu-seal {
+          position: relative;
+          width: 68%;
+      }
+      #ftr-col-4-img {
+          display: block;
+      }
+      /*2nd layer footer*/
+      /*news*/
+      .news-col-1-4 {
+          margin: 0 9.46px;
+      }
+      .announcements-col-1-4 {
+          margin: 0 9.46px;
+      }
+      .news-title {
+          font-size: 13px;
+      }
+      /*news*/
+  }
+  /*150% pixel*/
+  @media all and (max-width : 973px) and (min-width : 769px) {
+    .campus-head-col-1 {
+        width: 30%!important;
+    }
+    .campus-head-col-2 {
+        width: 68.1% !important;
+        margin: 0px 5px;
+        padding: 0 10px;
+    }
+      .slides img {
+          max-height: 300px;
+      }
+      /*sub-pages column containers*/
+      .col-1-con {
+          width: 24%;
+      }
+      .col-2-con {
+          width: 73.2%;
+          margin: 0 0 0 20px;
+      }
+
+      .map-inner-wrapper {
+          width: 1150px;
+          min-height: 275px;
+          height: auto;
+      }
+      .googlemap {
+          width: 100%;
+          height: 275px
+      }
+      /* directives */
+      .col-1-5 {
+          display: inline-block;
+          padding: 0 3px;
+          margin: 4px .5px;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .col-1-5 {
+          width: 32.6236%
+      }
+      #respo-af {
+          width: 32.9236%;
+          margin: 0 0 0 125px;
+      }
+      #respo-services {
+          width: 32.9236%;
+          margin: 0px 0px;
+      }
+      /* directives */
+
+      #respo-alumni {
+          background-color: white;
+          height: 50px;
+      }
+      /*a-events layer*/
+      .announcement {
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .events {
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+          margin-right: 0px;
+          margin-bottom: 10px;
+      }
+      .events {
+          width: 100%;
+      }
+      .announcement {
+          width: 100%;
+      }
+      /*a-events layer*/
+      /*event*/
+      #e-adjust-1 {
+          margin-top: -13.5px
+      }
+      #e-adjust-2 {
+          margin-top: 12.5px
+      }
+      .event-col-1 {
+          width: 32.69938650306748%;
+      }
+      .event-col-2 {
+          width: 67.3%;
+      }
+      .event-col-1 {
+          display: inline-block;
+          margin: 0 5px 0 -10px;
+          padding: 15px 10px;
+      }
+      .event-col-2 {
+          display: inline-block;
+          margin: 0 0 0 5px;
+          padding: 0 0px;
+      }
+      /*event*/
+      /*news*/
+      .news-col-1-4 {
+          width: 47%;
+      }
+      .news-col-1-4 {
+          margin: 10.5px 10.5px;
+      }
+      .announcements-col-1-4 {
+          width: 47%;
+      }
+      .news-title {
+          font-size: 13px;
+      }
+      .respo-news {
+          padding: 10px;
+          margin: -10px 0px -15px 0px;
+          display: inline-block;
+      }
+      /*news*/
+      /*newsletter*/
+      #img-size-newsletter {
+          max-height: 310px;
+      }
+      .news-letter-col-1-3 {
+          width: 29.77%;
+      }
+      .news-letter-col-1-3 {
+          display: block;
+          margin: 0 20.312px;
+      }
+      .news-letter-col-1-3-featured {
+          width: 28.46%;
+      }
+      .news-letter-col-1-3-featured {
+          display: block;
+          margin: 0 20.312px;
+      }
+      /*newsletter*/
+      /*body*/
+      .body-inner-wrapper {
+          max-width: 730px;
+      }
+      .campus-head-con-in {
+          max-width: 730px;
+      }
+      .header-top-inner-wrapper {
+          max-width: 730px
+      }
+      .one_half,
+      .one_half-1,
+      .one_third,
+      .two_quarter,
+      .three_quarter {
+          display: inline-block;
+          width: auto;
+          margin: 0px 0px 0px 0px;
+          padding: 0;
+      }
+      .two_third {
+          display: inline-block;
+          margin: 0px 0px 0px 0px;
+          width: auto;
+          padding: 0;
+      }
+      .one_third {
+          width: 100%;
+      }
+
+      #acad {
+          height: 280px;
+          width: 100%;
+      }
+      #campus-life {
+          height: 380px;
+          width: 100%;
+      }
+      .one_half {
+          width: 100%;
+          display: inline-block;
+      }
+      .one_half-1 {
+          width: 100%;
+          display: inline-block;
+          margin-right: 20px;
+      }
+      .space div {
+          margin-bottom: 40px;
+      }
+      #img-size {
+          width: 100%;
+          height: auto;
+      }
+      #acad {
+          height: auto;
+          width: 100%;
+      }
+      #offices-resources {
+          width: 100%;
+          height: auto;
+      }
+      #ftr-img {
+          max-height: 15px;
+          margin-top: -8px;
+      }
+      #ftr-col-4-img {
+          display: none;
+      }
+      /*body*/
+      nav a {
+          text-align: center;
+          max-width: 91.8px;
+          display: block;
+          padding: 8px 2px;
+          color: #FFF;
+          font-size: 13px;
+          text-decoration: none;
+          z-index: 9999999;
+      }
+      #remove {
+          display: none !important;
+      }
+      #remove-1 {
+          display: none !important;
+      }
+      .nav-inner-wrapper {
+          margin: 0 auto;
+          word-wrap: break-word;
+          max-width: 735px;
+          min-height: 25px;
+          height: auto;
+          background-color: #121212;
+      }
+      nav ul ul {
+          margin-left: -90.69px;
+      }
+      nav ul ul li {
+          width: 0px;
+      }
+      .wrapper {
+          max-width: 730px;
+      }
+      .inFtrContainer- {
+          max-width: 230px;
+      }
+
+      .page-header {
+          font-size: 28px;
+          margin-top: 0px;
+      }
+
+      .column {
+          width: 100%;
+      }
+      #adjust {
+          margin-top: -20px;
+      }
+
+      .semi-page-header ul li {
+          color: rgb(85, 40, 40);
+          margin-left: 30px;
+      }
+      #respo-adjust {
+          margin-left: 0px;
+          margin-top: -9px
+      }
+      .half {
+          width: 100%;
+      }
+      /*1st layer footer*/
+      .footer-one_third {
+          width: 100%
+      }
+      .ftr-col1-5 {
+          width: 100%;
+          float: center;
+      }
+      .first-col p {
+          font-size: 11.9px;
+      }
+      .first-col h4 a {
+          color: #000008;
+          font-size: 18.5px;
+          letter-spacing: -1.5px;
+          line-height: 2px;
+          font-weight: 800;
+      }
+      #respo-title {
+          font-size: 21.5px;
+          letter-spacing: -1.2px;
+          font-weight: 600;
+      }
+      #footer-title {
+          width: 50%;
+          margin-top: 6px;
+          text-align: right;
+          padding-right: 10px;
+      }
+      #footer-address {
+          width: 50%;
+          line-height: 17px;
+          letter-spacing: 1px;
+      }
+      .ftr-header {
+          height: 8px;
+      }
+      .footer-one_third {
+          margin: 0px 0px 0 0px;
+          padding: 5px 10px;
+      }
+      .ftr-col1-5 {
+          width: 20%;
+      }
+      .ftr-col-1 {
+          display: inline-block;
+          float: left;
+          margin: 0 0 0 0px;
+          width: 100%;
+      }
+      .col-design a {
+          font-size: 13px;
+      }
+      .col-design ul {
+          font-size: 12.5px;
+      }
+      .col-design p {
+          font-size: 11px;
+      }
+      /*1st layer footer*/
+      /*2nd layer footer*/
+      .footer-one_quarter {
+          width: 31.7%;
+      }
+      .footer-one_quarter {
+          display: inline-block;
+          margin: 0px 0px 0px 10px;
+      }
+      .col-1-35-ftr {
+          display: block;
+          float: left;
+          margin-top: -5px;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .col-1-65-ftr {
+          display: block;
+          float: left;
+          margin-top: -8px;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .msu-system-footer ul {
+          color: #a70202;
+          font-family: Arial, Helvetica, sans-serif;
+          text-transform: uppercase;
+          padding-top: 5px;
+          padding-bottom: 5px
+      }
+      .msu-system-footer h1 {
+          font-size: 13px;
+          color: #555555;
+          margin-bottom: 5px;
+      }
+      .msu-system-footer p {
+          font-size: 12px;
+          color: white;
+      }
+      .msu-system-footer a {
+          font-size: 11px;
+          color: white;
+          letter-spacing: -.53px;
+      }
+      #ftr-col-4-img {
+          width: 75%;
+      }
+      #msu-seal {
+          position: relative;
+          width: 15%;
+      }
+      #respo-seal {
+          width: 100%;
+          margin: 0px 0px 10px 0px;
+      }
+      /*2nd layer footer*/
+  }
+  /*175% pixel*/
+  @media all and (max-width : 768px) {
+    .campus-head-col-1 {
+        
+        width: 100%!important;
+    }
+    #max-img{
+        width: 280px!important;
+    }
+    .campus-head-col-2 {
+        width: 100% !important;
+    }
+      #respo-services {
+          margin: 0px 25%;
+      }
+
+      .col-2-2-prof {
+          width: 65%;
+          padding-right: 5px;
+      }
+      .col-2-3-prof {
+          width: 30.8%;
+          padding-left: 5px;
+      }
+      .slides img {
+          max-height: 300px;
+      }
+
+      #respo-btn-display {
+          display: block
+      }
+      nav li ul li a {
+          font-size: 11.2px;
+          text-align: start;
+          padding-left: 35%;
+      }
+      #submenu {
+          display: block
+      }
+      .col-1-con {
+          display: none
+      }
+      .col-2-con {
+          width: 100%;
+          margin: 0
+      }
+      .page-header-1 {
+          display: none
+      }
+      #respo-wrapper {
+          width: 100%;
+      }
+      /*a-events layer*/
+      .announcement {
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .events {
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+          margin-right: 0px;
+          margin-bottom: 10px;
+      }
+      .events {
+          width: 100%;
+      }
+      .announcement {
+          width: 100%;
+      }
+      /*a-events layer*/
+      /*news*/
+      .news-col-1-4 {
+          width: 45%;
+      }
+      .news-col-1-4 {
+          margin: 3.7% 0 0 3.7%;
+      }
+      .announcements-col-1-4 {
+          width: 45%;
+      }
+      .announcements-col-1-4 {
+          margin: 3.7% 0 0 3.7%;
+      }
+      .news-title {
+          font-size: 13px;
+      }
+      .respo-news {
+          padding: 10px;
+          margin: -10px 0px -15px 0px;
+          display: inline-block;
+      }
+      /*news*/
+      /*newsletter*/
+      #img-size-newsletter {
+          max-height: 310px;
+      }
+      .news-letter-col-1-3 {
+          width: 29%;
+      }
+      .news-letter-col-1-3 {
+          display: inline-block;
+          margin: 0 2%
+      }
+      .news-letter-col-1-3-featured {
+          width: 29%;
+      }
+      .news-letter-col-1-3-featured {
+          display: inline-block;
+          margin: 0 2%
+      }
+      #respo-newsletter {
+          display: inline-block;
+          margin: 2% 2%
+      }
+      /*newsletter*/
+      .body-inner-wrapper {
+          display: block;
+          max-width: 100%;
+          padding: 0 20px;
+      }
+      .campus-head-con-in {
+          display: block;
+          max-width: 100%;
+          padding: 0 20px;
+      }
+
+      .map-inner-wrapper {
+          width: 100%;
+          min-height: 275px;
+          height: auto;
+      }
+      .googlemap {
+          width: 100%;
+          height: 275px
+      }
+
+      .header-top-inner-wrapper {
+          max-width: 96%;
+      }
+      nav {
+          height: 33px;
+          border-top: .5px solid #121212;
+      }
+
+      label {
+          display: none;
+          /* Hide the label by default */
+          cursor: pointer;
+      }
+      /* Hide the navigation menu by default */
+      /* Also hide the  */
+      .toggle+a,
+      .menu {
+          display: none;
+          transition: color 2.1s linear;
+          z-index: 999999999;
+      }
+      /* Styling the toggle label */
+      .toggle {
+          display: block;
+          background-color: #121212;
+          padding: 7px 20px;
+          color: #FFF;
+          text-align: center;
+          font-size: 13px;
+          text-decoration: none;
+          border: none;
+          cursor: pointer;
+      }
+      .toggle:hover {
+          background-color: #d3d1d1;
+          color: #333;
+      }
+      /* Display Dropdown when clicked on Parent Label */
+      [id^=drop]:checked+ul {
+          display: block;
+      }
+      /* Change menu item's width to 100% */
+      nav ul li {
+          display: block;
+          width: 100%;
+      }
+      nav a:hover,
+      nav ul ul ul a {
+          background: #d3d1d1;
+          color: #333;
+      }
+      nav ul li a {
+          margin: 0;
+          top: -2px;
+      }
+      nav ul ul {
+          margin-left: 0px;
+          display: none;
+          /* has to be the same number as the "line-height" of "nav a" */
+          top: 10px;
+      }
+      nav ul li ul li .toggle,
+      nav ul ul a,
+      nav ul ul ul a {
+          padding: 11px 0px;
+          color: #FFF;
+          font-size: 11px;
+          text-align: center;
+      }
+      nav ul li ul li .toggle,
+      nav ul ul a {
+          background-color: #121212;
+          transition: color .5s linear;
+      }
+      /* Hide Dropdowns by Default */
+      nav ul ul {
+          float: none;
+          position: static;
+          color: #ffffff;
+          /* has to be the same number as the "line-height" of "nav a" */
+      }
+      /* Hide menus on hover */
+      nav ul ul li:hover>ul,
+      nav ul li:hover>ul {
+          display: none;
+      }
+      /* First Tier Dropdown */
+      nav ul ul li {
+          display: block;
+          width: 100%;
+      }
+      nav ul ul ul li {
+          position: static;
+          /* has to be the same number as the "width" of "nav ul ul li" */
+      }
+      nav a {
+          text-align: center;
+          width: 100%;
+          display: block;
+          padding: 8px 5px;
+          color: #FFF;
+          font-size: 13px;
+          text-decoration: none;
+      }
+      /* Show the <a> tag and hide the label when dropdown is open */
+
+      [id^=drop]:checked~label {
+          display: block;
+      }
+
+      .toggle-1:checked~label {
+          display: none;
+      }
+
+      .toggle-1:checked~.menu {
+          display: block;
+      }
+
+      .toggle-1:checked~.menu a {
+          display: block;
+      }
+      #respo-events {
+          border-bottom: .2px solid black;
+      }
+      .slideshow-container {
+          padding-bottom: 10px;
+          padding-top: 0%;
+          position: relative;
+          margin: auto;
+      }
+      /*event*/
+      #e-adjust-1 {
+          margin-top: -13.5px
+      }
+      #e-adjust-2 {
+          margin-top: 12.5px
+      }
+      .event-col-1 {
+          width: 32.69938650306748%;
+      }
+      .event-col-2 {
+          width: 67.3%;
+      }
+      .event-col-1 {
+          display: inline-block;
+          margin: 0 5px 0 -10px;
+          padding: 15px 10px;
+      }
+      .event-col-2 {
+          display: inline-block;
+          margin: 0 0 0 5px;
+          padding: 0 0px;
+      }
+      /*event*/
+      /*body*/
+      .one_half,
+      .one_half-1,
+      .one_third,
+      .two_quarter,
+      .three_quarter {
+          display: inline-block;
+          width: auto;
+          margin: 0px 0px 0px 0px;
+          padding: 0;
+      }
+      .two_third {
+          display: inline-block;
+          margin: 0px 0px 0px 0px;
+          width: auto;
+          padding: 0;
+      }
+      .one_third {
+          width: 100%;
+      }
+      .one_quarter {
+          width: 24%;
+      }
+      .one_quarter {
+          display: inline-block;
+          margin: 0px 0px 0px 5px;
+          padding: 0;
+      }
+      .msu-system-footer ul {
+          color: #a70202;
+          font-family: Arial, Helvetica, sans-serif;
+          text-transform: uppercase;
+          padding-top: 5px;
+          padding-bottom: 5px
+      }
+      .msu-system-footer h1 {
+          font-size: 11px;
+          color: #555555;
+          margin-bottom: 10px;
+      }
+      .msu-system-footer p {
+          font-size: 11px;
+          color: white;
+      }
+      .msu-system-footer a {
+          font-size: 11px;
+          color: white;
+      }
+
+      #acad {
+          height: 380px;
+          width: 100%;
+      }
+      #campus-life {
+          height: 380px;
+          width: 100%;
+      }
+
+      .one_half-1 {
+          width: 100%;
+          display: inline-block;
+          ;
+      }
+      .board {
+          margin-top: -10px;
+          margin-bottom: 15px;
+      }
+      .board h1 {
+          font-size: 1.15em;
+      }
+      .board-design ul a li {
+          font-size: 1.1em;
+          margin-top: 10px;
+      }
+      .space div {
+          margin-bottom: 40px;
+      }
+      #img-size {
+          width: 100%;
+          height: auto;
+      }
+      .page-header {
+          font-size: 28px;
+          margin-top: 0px;
+      }
+      .semi-page-header ul li {
+          color: rgb(85, 40, 40);
+          margin-left: 30px;
+      }
+      #respo-adjust {
+          margin-left: 0px;
+          margin-top: -9px
+      }
+      .half {
+          width: 100%;
+      }
+      /*body*/
+      /* top right bottom left = margin: 0 0 0 0*/
+      /*1st layer footer*/
+      .footer-one_third {
+          width: 100%
+      }
+      .footer-one_half {
+          width: 50%
+      }
+      .ftr-col1-5 {
+          width: 100%;
+          float: center;
+      }
+      .first-col p {
+          font-size: 11.9px;
+      }
+      .first-col h4 a {
+          color: #000008;
+          font-size: 19.5px;
+          letter-spacing: -1px;
+          line-height: 2px;
+      }
+      #respo-title {
+          font-size: 20px;
+          letter-spacing: -.6px;
+          font-weight: 600;
+      }
+      #footer-title {
+          width: 50%;
+          margin-top: 6px;
+          text-align: right;
+          padding-right: 10px;
+      }
+      #footer-address {
+          width: 50%;
+          line-height: 17px;
+          letter-spacing: 1px;
+      }
+      .ftr-header {
+          height: 8px;
+      }
+      .ftr-col1-5 {
+          width: 100%;
+      }
+      .ftr-col-1 {
+          display: inline-block;
+          width: 100%;
+          padding: 15px 5px;
+          text-align: center;
+          float: left
+      }
+      .col-design a {
+          font-size: 13px;
+      }
+      .col-design ul {
+          font-size: 12.5px;
+      }
+      .col-design p {
+          font-size: 11px;
+      }
+      /*1st layer footer*/
+      /*2nd layer footer*/
+      .footer-one_quarter {
+          width: 100%;
+      }
+      .footer-one_quarter {
+          display: inline-block;
+          margin: 0px 0px 15px 0px;
+          padding: 0 10px;
+      }
+
+      .msu-system-footer ul {
+          color: #a70202;
+          font-family: Arial, Helvetica, sans-serif;
+          text-transform: uppercase;
+          padding-top: 5px;
+          padding-bottom: 5px
+      }
+      .msu-system-footer h1 {
+          font-size: 13px;
+          color: #555555;
+          margin-bottom: 5px;
+      }
+      .msu-system-footer p {
+          font-size: 12px;
+          color: white;
+      }
+      .msu-system-footer a {
+          font-size: 11px;
+          color: white;
+          letter-spacing: -.53px;
+      }
+      .msu-system-footer {
+          text-align: center;
+      }
+      .col-4-img-s {
+          width: 200%;
+      }
+      .col-1-35-ftr {
+          width: 100%;
+      }
+      .col-1-65-ftr {
+          width: 25%;
+      }
+      .btmspace-20 {
+          margin-bottom: 10px;
+      }
+      #msu-seal {
+          position: relative;
+          width: 15%;
+      }
+      #respo-seal {
+          width: 100%;
+          margin: 0px 0px 10px 0px;
+      }
+      #ftr-col-4-img-1 {
+          display: block;
+      }
+      #ftr-col-4-img-2 {
+          display: none;
+      }
+      .col-4-img-s {
+          width: 10%;
+      }
+      /*2nd layer footer*/
+      /* directives */
+      .col-1-5 {
+          display: grid;
+          padding: 0px;
+          margin: 0 .6% 2% .6%;
+          box-sizing: border-box;
+          float: left;
+          height: 150px;
+      }
+      .col-1-5 {
+          width: 48.8%
+      }
+      /* directives */
+      #respo-alumni {
+          background-color: white;
+          height: 50px;
+      }
+      #ftr-img {
+          max-height: 13px;
+          margin-top: -10px;
+      }
+
+      nav ul li {
+          margin-top: -1px;
+      }
+
+      #respo-official {
+          width: 45%;
+      }
+      #responsive {
+          width: 100%;
+          display: block;
+      }
+
+  }
+  @media all and (max-width : 425px) and (min-width : 376px) {
+      #respo-services {
+          width: 100%;
+          margin: 0px 0px;
+      }
+      .news-letter-row {
+          padding: 10px 15px;
+      }
+      .respo-row {
+          padding: 10px 20px;
+      }
+      .slides img {
+          max-height: 190px;
+      }
+      /* directives */
+      .col-1-5 {
+          display: grid;
+          padding: 0px;
+          margin: 0 .6% 2% .6%;
+          box-sizing: border-box;
+          float: left;
+          height: 150px;
+      }
+      .col-1-5 {
+          width: 48.8%
+      }
+      /* directives */
+      #respo-alumni {
+          background-color: white;
+          height: 50px;
+      }
+      /*a-events layer*/
+      .announcement {
+          width: 100%;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .events {
+          width: 100%;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      /*a-events layer*/
+      /*news*/
+      .news-col-1-4 {
+          width: 100%;
+      }
+      .news-col-1-4 {
+          margin: 10px 0px;
+      }
+      .announcements-col-1-4 {
+          width: 100%;
+      }
+      .announcements-col-1-4 {
+          margin: 10px 0px;
+      }
+      .news-title {
+          font-size: 13px;
+      }
+      .respo-news {
+          padding: 13px 20px;
+          margin: -10px 0px -15px 0px;
+          display: inline-block;
+      }
+      /*news*/
+      /*newsletter*/
+      #img-size-newsletter {
+          max-height: 310px;
+      }
+      .news-letter-col-1-3 {
+          width: 100%;
+      }
+      .news-letter-col-1-3 {
+          display: inline-block;
+          margin: 0 0
+      }
+      .news-letter-col-1-3-featured {
+          width: 100%;
+      }
+      .news-letter-col-1-3-featured {
+          display: inline-block;
+          margin: 5px 0px !important;
+      }
+      #respo-newsletter {
+          display: inline-block;
+          margin: 10px 0
+      }
+      /*newsletter*/
+      /*event*/
+      #e-adjust-1 {
+          margin-top: -5.5px
+      }
+      #e-adjust-2 {
+          margin-top: 11.5px
+      }
+      .event-col-1 {
+          width: 32.69938650306748%;
+      }
+      .event-col-2 {
+          width: 67.3%;
+      }
+      .event-col-1 {
+          display: inline-block;
+          margin: 0 5px 0 -10px;
+          padding: 15px 10px;
+      }
+      .event-col-2 {
+          display: inline-block;
+          margin: 0 0 0 5px;
+          padding: 0 0px;
+      }
+      /*event*/
+      /*body*/
+      .body-inner-wrapper {
+          max-width: 100%;
+          padding: 0px 15px;
+      }
+      .campus-head-con-in {
+          max-width: 100%;
+          padding: 0px 15px;
+      }
+      .half,
+      .one_half,
+      .one_half-1,
+      .one_third,
+      .one_quarter,
+      .two_quarter,
+      .three_quarter {
+          display: block;
+          width: auto;
+          margin: 0px 0px 0px 0px;
+          padding: 0;
+      }
+      .two_third {
+          display: block;
+          margin: 0px 0px 0px 0px;
+          width: auto;
+          padding: 0;
+      }
+      .one_third {
+          width: 100%;
+          margin-bottom: 15px;
+      }
+
+
+      /*1st layer footer*/
+      .inFtrContainer-I {
+          padding: 0 0px;
+      }
+      .ftr-header-in {
+          padding: 0 0px;
+      }
+      .footer-one_third {
+          width: 100%
+      }
+      .footer-one_half {
+          width: 50%
+      }
+      .first-col p {
+          font-size: 11.9px;
+      }
+      .first-col h4 a {
+          color: #000008;
+          font-size: 12px;
+          font-weight: 800
+      }
+
+      .ftr-header {
+          height: 8px;
+      }
+      #respo-title {
+          font-size: 14px
+      }
+      .footer-one_third {
+          margin: 0px 0px 0 0px;
+          padding: 8px 0px;
+      }
+      .ftr-col1-5 {
+          width: 100%;
+      }
+      .ftr-col-1 {
+          display: inline-grid;
+          width: 100%;
+          padding: 15px 5px;
+          text-align: center;
+          float: left
+      }
+      .col-design a {
+          font-size: 13px;
+      }
+      .col-design ul {
+          font-size: 12.5px;
+      }
+      .col-design p {
+          font-size: 11px;
+      }
+      /*1st layer footer*/
+      .half {
+          width: 100%;
+          display: inline-block;
+      }
+      .board {
+          margin-top: -10px;
+          margin-bottom: 15px;
+      }
+      .board h1 {
+          font-size: 1.15em;
+      }
+      .board-design ul a li {
+          font-size: 1.1em;
+          margin-top: 10px;
+      }
+
+      .one_half {
+          width: 100%;
+          display: inline-block;
+          margin-top: -10px;
+      }
+
+      .section-col-1 a {
+          font-size: 18px;
+      }
+      .section-col-1 p {
+          font-size: 14px;
+      }
+      .section-col-1 ul a {
+          font-size: 13px;
+      }
+      .one_half-1 {
+          width: 100%;
+          display: inline-block;
+          ;
+      }
+      #img-size {
+          width: 100%;
+          height: auto;
+      }
+      #acad {
+          height: 240px;
+          width: 100%;
+      }
+      #campus-life {
+          height: 280px;
+          width: 100%;
+      }
+      .textDesign {
+          font-size: 1rem;
+      }
+      .page-header {
+          font-size: 22px;
+          margin-top: 0px;
+      }
+      .semi-page-header ul li {
+          color: rgb(85, 40, 40);
+          margin-left: 30px;
+      }
+      #respo-adjust {
+          margin-left: 0px;
+          margin-top: -9px
+      }
+      .half {
+          width: 100%;
+      }
+      #ftr-img {
+          max-height: 11px;
+          margin-top: -12px;
+      }
+      /*body*/
+      nav ul li {
+          margin-top: -1px;
+      }
+      #respo-official {
+          width: 80%;
+      }
+      #responsive {
+          width: 100%;
+          display: block;
+      }
+  }
+  @media all and (max-width : 639px) and (min-width : 425px) {
+    .news-letter-col-1-3-featured {
+        width:100%;
+        margin:5px 0px !important;
+    }
+  }
+  @media all and (max-width : 375px) and (min-width : 320px) {
+      .slides img {
+          max-height: 150px;
+      }
+      #respo-services {
+          margin: 0px 0%;
+      }
+      .news-letter-row {
+          padding: 10px 15px;
+      }
+      .respo-row {
+          padding: 10px 20px;
+      }
+      /* directives */
+      .col-1-5 {
+          display: grid;
+          padding: 0px;
+          margin: 0 .6% 2% .6%;
+          box-sizing: border-box;
+          float: left;
+          height: 160px;
+      }
+      .col-1-5 {
+          width: 48.8%
+      }
+      #respo-services {
+          width: 100%;
+      }
+      /* directives */
+      #respo-alumni {
+          background-color: white;
+          height: 50px;
+      }
+      /*a-events layer*/
+      .announcement {
+          width: 100%;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .events {
+          width: 100%;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      /*a-events layer*/
+      /*news*/
+      .news-col-1-4 {
+          width: 100%;
+      }
+      .news-col-1-4 {
+          margin: 10px 0px;
+      }
+      .announcements-col-1-4 {
+          width: 100%;
+      }
+      .announcements-col-1-4 {
+          margin: 10px 0px;
+      }
+      .news-title {
+          font-size: 13px;
+      }
+      .respo-news {
+          padding: 13px 20px;
+          margin: -10px 0px -15px 0px;
+          display: inline-block;
+      }
+      /*news*/
+
+      /*newsletter*/
+      #img-size-newsletter {
+          max-height: 310px;
+      }
+      .news-letter-col-1-3 {
+          width: 100%;
+      }
+      .news-letter-col-1-3 {
+          display: inline-block;
+          margin: 0 0
+      }
+      .news-letter-col-1-3-featured {
+          width: 100%;
+      }
+      .news-letter-col-1-3-featured {
+          display: inline-block;
+          width:100%;
+          margin:5px 0px !important;      
+        }
+      #respo-newsletter {
+          display: inline-block;
+          margin: 10px 0
+      }
+      /*newsletter*/
+
+      /*event*/
+      #e-adjust-1 {
+          margin-top: -5.5px
+      }
+      #e-adjust-2 {
+          margin-top: 11.5px
+      }
+      .event-col-1 {
+          width: 32.69938650306748%;
+      }
+      .event-col-2 {
+          width: 67.3%;
+      }
+      .event-col-1 {
+          display: inline-block;
+          margin: 0 5px 0 -10px;
+          padding: 15px 10px;
+      }
+      .event-col-2 {
+          display: inline-block;
+          margin: 0 0 0 5px;
+          padding: 0 0px;
+      }
+      /*event*/
+      .Directives {
+          margin-top: -9px;
+      }
+      .Directives ul {
+          list-style-type: square;
+          margin-bottom: 20px;
+      }
+      .Directives em {
+          text-align: center;
+          color: #fff;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .Directives a {
+          font-size: .75em;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #000000;
+          cursor: pointer;
+          line-height: .1rem;
+          letter-spacing: .03px;
+      }
+      .Directives a:hover {
+          color: #941a1e;
+          transition: color .6s linear;
+          text-decoration: underline;
+      }
+      .Directives img {
+          text-align: center;
+      }
+
+      /*1st layer footer*/
+      .inFtrContainer-I {
+          padding: 0 0px;
+      }
+      .footer-one_third {
+          width: 100%
+      }
+      .footer-one_half {
+          width: 50%
+      }
+      .first-col p {
+          font-size: 10.9px;
+      }
+      .first-col h4 a {
+          color: #000008;
+          font-size: 11.5px;
+          font-weight: 800;
+          letter-spacing: -1.4px;
+      }
+      .ftr-header {
+          height: 8px;
+      }
+      #respo-title {
+          font-size: 12px
+      }
+      .footer-one_third {
+          margin: 0px 0px 0 0px;
+          padding: 8px 0px;
+      }
+      .ftr-col1-5 {
+          width: 100%;
+      }
+      .ftr-col-1 {
+          display: inline-grid;
+          width: auto;
+          padding: 15px 5px;
+          text-align: center;
+          float: left
+      }
+      .col-design a {
+          font-size: 13px;
+      }
+      .col-design ul {
+          font-size: 12.5px;
+      }
+      .col-design p {
+          font-size: 11px;
+      }
+      /*1st layer footer*/
+     /*body*/
+      .body-inner-wrapper {
+          max-width: 100%;
+          padding: 0px 15px;
+      }
+      .campus-head-con-in {
+          max-width: 100%;
+          padding: 0px 15px;
+      }
+      .half,
+      .one_half,
+      .one_half-1,
+      .one_third,
+      .one_quarter,
+      .two_quarter,
+      .three_quarter {
+          display: block;
+          width: auto;
+          margin: 0px 0px 0px 0px;
+          padding: 0;
+      }
+      .two_third {
+          display: block;
+          margin: 0px 0px 0px 0px;
+          width: auto;
+          padding: 0;
+      }
+      .one_half-1 {
+          margin-top: -20px;
+      }
+      .one_third {
+          width: 100%;
+          margin-bottom: 15px;
+      }
+      .half {
+          width: 100%;
+          display: inline-block;
+      }
+      .board {
+          margin-top: -10px;
+          margin-bottom: 35px;
+      }
+      .board h1 {
+          font-size: 1.15em;
+      }
+      .board-design ul a li {
+          font-size: 1.1em;
+          margin-top: 10px;
+      }
+      .one_half {
+          width: 100%;
+          display: inline-block;
+          margin-top: -10px;
+      }
+      .section-col-1 a {
+          font-size: 15px;
+      }
+      .section-col-1 p {
+          font-size: 13px;
+      }
+      .section-col-1 ul a {
+          font-size: 13px;
+      }
+      .one_half-1 {
+          width: 100%;
+          display: inline-block;
+          ;
+      }
+      #img-size {
+          width: 100%;
+          height: auto;
+      }
+      #acad {
+          height: 240px;
+          width: 100%;
+      }
+      #campus-life {
+          height: 280px;
+          width: 100%;
+      }
+
+      .textDesign {
+          font-size: .9rem;
+      }
+      .page-header {
+          font-size: 21px;
+          margin-top: 0px;
+      }
+      /*body*/
+      nav ul li {
+          margin-top: -1px;
+      }
+      h1, h3, h5, h6, .heading {
+          display: block;
+          margin: 0 0 1px 0;
+          font-size: 12.5px;
+          line-height: normal;
+          font-weight: normal;
+          font-style: normal;
+      }
+
+      #respo-official {
+          width: 80%;
+      }
+      #responsive {
+          width: 100%;
+          display: block;
+      }
+  }
+
+  @media all and (max-width : 320px) {
+      #respo-services {
+          margin: 0px 0%;
+      }
+      .respo-row {
+          padding: 10px 20px;
+      }
+
+      .news-letter-row {
+          padding: 10px 15px;
+      }
+      #responsive {
+          width: 100%;
+          display: block;
+      }
+      .col-2-3 {
+          width: 100%;
+      }
+      .slides img {
+          max-height: 150px;
+      }
+      .col-1-5 {
+          display: grid;
+          padding: 0px;
+          margin: 0 .6% 2% .6%;
+          box-sizing: border-box;
+          float: left;
+      }
+      .col-1-5 {
+          width: 100%
+      }
+      #respo-alumni {
+          background-color: white;
+          height: 50px;
+      }
+      .Directives {
+          margin-top: -8px;
+      }
+      .Directives ul {
+          list-style-type: square;
+          margin-bottom: 20px;
+      }
+      .Directives a {
+          font-size: .75em;
+          font-family: Arial, Helvetica, sans-serif;
+          color: #000000;
+          cursor: pointer;
+          line-height: .1rem;
+          letter-spacing: .03px;
+      }
+      .Directives a:hover {
+          color: #941a1e;
+          transition: color .6s linear;
+          text-decoration: underline;
+      }
+      .Directives img {
+          text-align: center;
+      }
+
+      .inFtrContainer-I {
+          height: 100%
+      }
+      /*a-events layer*/
+      .announcement {
+          width: 100%;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      .events {
+          width: 100%;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          box-sizing: border-box;
+      }
+      /*a-events layer*/
+      /*newsletter*/
+      #img-size-newsletter {
+          max-height: 310px;
+      }
+      .news-letter-col-1-3 {
+          width: 100%;
+      }
+      .news-letter-col-1-3 {
+          display: grid;
+      }
+      .news-letter-col-1-3-featured {
+          width: 100%;
+      }
+      .news-letter-col-1-3-featured {
+          display: grid;
+          width:100%;
+          margin:5px 0px !important;
+      }
+      .news-letter-row {
+          padding: 0 10px;
+      }
+      /*newsletter*/
+      /*body*/
+      .body-inner-wrapper {
+          max-width: 100%;
+          padding: 0px 15px;
+      }
+      .campus-head-con-in {
+          max-width: 100%;
+          padding: 0px 15px;
+      }
+      .half,
+      .one_half,
+      .one_half-1,
+      .one_third,
+      .one_quarter,
+      .two_quarter,
+
+      .three_quarter {
+          display: block;
+          width: auto;
+          margin: 0px 0px 0px 0px;
+          padding: 0;
+      }
+      .two_third {
+          display: block;
+          margin: 0px 0px 0px 0px;
+          width: auto;
+          padding: 0;
+      }
+      .one_half-1 {
+          margin-top: -20px;
+      }
+      .one_third {
+          width: 100%;
+          margin-bottom: 15px;
+      }
+
+      .half {
+          width: 100%;
+          display: inline-block;
+      }
+      .board {
+          margin-top: -24px;
+      }
+      .board ul {
+          margin: 0 10px 0 11px
+      }
+      .board h1 {
+          font-size: 1.15em;
+      }
+      .board-design ul a li {
+          font-size: 1em;
+          margin-top: 10px;
+      }
+
+      .one_half {
+          width: 100%;
+          display: inline-block;
+          margin-top: -10px;
+      }
+      .section-col-1 a {
+          font-size: 15px;
+      }
+      .section-col-1 p {
+          font-size: 13px;
+      }
+      .section-col-1 ul a {
+          font-size: 13px;
+      }
+      .one_half-1 {
+          width: 100%;
+          display: inline-block;
+          ;
+      }
+      #img-size {
+          width: 100%;
+          height: auto;
+      }
+      #acad {
+          height: 200px;
+          width: 100%;
+      }
+      #campus-life {
+          height: 240px;
+          width: 100%;
+      }
+      /*1st layer footer*/
+      .inFtrContainer-I {
+          padding: 0 0px;
+      }
+      .ftr-header-in {
+          padding: 0 0px;
+      }
+      .footer-one_third {
+          width: 100%
+      }
+      .footer-one_half {
+          width: 50%
+      }
+      .first-col p {
+          font-size: 9.9px;
+          line-height: 15px;
+          letter-spacing: -1px;
+      }
+      .first-col h4 a {
+          color: #000008;
+          font-size: 9.5px;
+          font-weight: 800;
+          letter-spacing: -1.25px;
+      }
+      .ftr-header {
+          height: 8px;
+      }
+      #respo-title {
+          font-size: 10px
+      }
+      .footer-one_third {
+          margin: 0px 0px 0 0px;
+          padding-top: 10px;
+      }
+      .ftr-col1-5 {
+          width: 100%;
+      }
+      .ftr-col-1 {
+          padding: 15px 5px;
+          text-align: center;
+          float: left
+      }
+      .col-design a {
+          font-size: 12px;
+      }
+      .col-design ul {
+          font-size: 9.5px;
+      }
+      .col-design p {
+          font-size: 11px;
+      }
+
+      #respo-official {
+          width: 95%;
+      }
+      /*1st layer footer*/
+      .textDesign {
+          font-size: .9rem;
+          margin-bottom: 20px;
+      }
+      .page-header {
+          font-size: 20px;
+          margin-top: 0px;
+      }
+      .column {
+          width: 100%;
+      }
+      /*body*/
+
+      #first-row-img {
+          width: 45px;
+          ;
+          height: auto;
+      }
+      h1, h3, h4, h5, h6, .heading {
+          display: block;
+          margin: 0 0 1px 0;
+          font-size: 12.5px;
+          line-height: normal;
+          font-weight: normal;
+          font-style: normal;
+      }
+  }
+  @media all and (max-width : 300px) {
+
+      nav ul li {
+          display: block;
+          width: 100%;
+      }
+      .header-logo-outer-wrapper {
+          height: 2200px;
+      }
+  }
+  .nav-inner-wrapper {
+      margin: 0 auto;
+      word-wrap: break-word;
+      width: 1152.6px;
+      min-height: 25px;
+      height: auto;
+      background-color: #121212;
+  }
+  .nav-outer-wrapper {
+      display: block;
+      background-color: #121212;
+      word-wrap: break-word;
+  }
+  .header-logo-inner-wrapper {
+      margin: 0 auto;
+      word-wrap: break-word;
+      width: 1150px;
+      padding-left: 7px;
+      padding-right: 7px;
+      max-height: 263px;
+      background-color: #800000;
+  }
+  .header-logo-outer-wrapper {
+      display: block;
+      margin: 0 auto;
+      background-color: #800000;
+      width: 100%;
+      word-wrap: break-word;
+      height: auto;
+  }
+  #msat-seal-logo {
+      width: 100%;
+      padding: 0px 0px;
+      min-height: 70px;
+  }
+
+  .header-top-inner-wrapper {
+      margin: 0 auto;
+      word-wrap: break-word;
+      width: 1150px;
+      height: auto;
+      background-color: #a70202;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  .header-top-outer-wrapper {
+      padding: 5px 0px;
+      display: block;
+      margin: 0 auto;
+      background-color: #a70202;
+      word-wrap: break-word;
+      border-bottom: 1px solid #800000;
+  }

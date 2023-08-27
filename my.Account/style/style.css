@@ -1,0 +1,370 @@
+input {
+  text-align: center;
+}
+.delete-button {
+  padding: 5px;
+  float: right;
+}
+.btn-primary {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #122a6d;
+  color: #f1f1f1;
+  margin-top: 10px;
+  display: block;
+  float: right;
+}
+.btn_del {
+  background-color: #122a6d;
+  margin: 10px 10px;
+}
+.container {
+  margin-left: 30%;
+  width: 400px;
+  background-color: #fff;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container_display {
+  margin-left: 10%;
+  width: 900px;
+  background-color: #fff;
+  padding: 10px;
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+label {
+  font-size: 16px;
+}
+.success {
+  margin: 5px 0px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: #33cc00;
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+}
+.item {
+  display: inline-block;
+  width: 100%;
+}
+
+.item img {
+  display: block;
+  margin: 10px 0;
+  max-width: 100%;
+  height: 400px;
+}
+.item a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-align: start;
+  border-radius: 5px;
+  padding: 5px;
+  font-weight: 700;
+}
+.item h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 5px;
+  font-weight: 300;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.file-input {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.file-input input[type="file"] {
+  position: absolute;
+  left: -9999px;
+}
+.file-label {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #eaeaea;
+  color: #333;
+  cursor: pointer;
+}
+.file-label:hover {
+  background-color: #ccc;
+}
+.col-1-row-1 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  height: 950px;
+}
+.col-1-row-3 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.con-input-a {
+  width: 100%;
+  margin-bottom: 50px;
+  padding: 5px;
+}
+.con-output-a {
+  width: 100%;
+}
+.con-input-a input {
+  background-color: transparent;
+  border: 1px solid black;
+  padding: 0px 0;
+}
+.column-1-A,
+.column-1-A {
+  display: inline-block;
+  float: left;
+  clear: both;
+}
+.column-1-A {
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.column-1-B {
+  width: 50%;
+  margin: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.form-control {
+  width: 100%;
+  height: 25px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.col-1-row-1-user {
+  margin: 15px 0px 15px 15px;
+  border-radius: 5px;
+  height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  width: 100%;
+}
+.con-1-col-1-user {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  height: 300px;
+  border: 1px solid black;
+}
+.con-1-col-2-user {
+  width: 50%;
+  display: inline-block;
+  float: left;
+  height: 300px;
+  border: 1px solid black;
+}
+.delete-btn {
+  float: left;
+}
+
+.news-row {
+  margin: 10px 0;
+}
+
+.first_half_con {
+  width: 40%;
+}
+.second_half_con {
+  width: 60%;
+}
+.first_half_con_admin {
+  width: 100%;
+}
+.second_half_con_admin {
+  width: 100%;
+}
+.uploader {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
+.day {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 0;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.uploader input[type="text"],
+.uploader textarea,
+.uploader input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.uploader input[type="number"] {
+  width: 100% !important;
+  padding: 10px !important;
+  margin-bottom: 5px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px !important; 
+  font-size: 14px !important;
+}
+.uploader input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #122a6d;
+  color: #fff;
+  margin-bottom: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.uploader input[type="submit"]:hover {
+  background-color: #123a9d;
+}
+.search-form input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+.search-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.uploader input[type="text"],
+.uploader input[type="file"],
+.uploader button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.uploader label {
+  margin-top: 10px;
+  display: block;
+}
+
+.uploader button.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+.uploader button.btn-primary:hover {
+  background-color: #0056b3;
+}
+.slide.active {
+  position: relative;
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+.slide-con {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 500ms linear;
+  text-align: center;
+}
+.slider {
+  width: 100%;
+  text-align: center;
+}
+.nav-md {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 10px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.pagination-btn {
+  display: contents;
+  position: relative;
+  text-align: center;
+}
+.slider-pagination {
+  display: contents;
+  max-height: 80px;
+}
+.pagination-btn {
+  display: contents;
+  position: relative;
+  text-align: center;
+}
+.collapse {
+  display: block;
+}
+.edit-delete-container {
+  padding: 10px 0px;
+}
+.edit-delete-container a {
+  padding: 0 4px;
+}
+.edit-delete-container a:hover {
+  text-decoration: underline;
+}
